@@ -2,5 +2,5 @@
 - hosts: localhost
   tasks:
     - name: Install zsh
-      apt: name=zsh
+      dnf: name=zsh
 
