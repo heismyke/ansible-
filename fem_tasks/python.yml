@@ -1,0 +1,5 @@
+- name: Install cmake
+  pip: 
+    name: cmake
+  tags:
+    - python

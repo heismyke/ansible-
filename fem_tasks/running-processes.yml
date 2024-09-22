@@ -1,0 +1,6 @@
+- name: Check servers that are running
+  command: node runningProcess.js
+  register: script_output
+  tags:
+    - server
+

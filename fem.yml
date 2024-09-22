@@ -1,6 +1,9 @@
 ---
 - hosts: localhost
   tasks:
-    - name: Install zsh
-      dnf: name=zsh
+     - import_tasks: fem_tasks/zsh.yml
+     - import_tasks: fem_tasks/node.yml
+     - import_tasks: fem_tasks/python.yml
+     - import_tasks: fem_tasks/running-processes.yml
+     
 
